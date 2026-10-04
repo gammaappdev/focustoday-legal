@@ -43,12 +43,15 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Focus Today &middot; Last updated 23 August 2026</p>
+<p class="updated">Focus Today &middot; Last updated 4 October 2026</p>
 
 <div class="summary">
-  <p><strong>In short:</strong> Focus Today does not collect, transmit, or sell your personal
-  data. The app has no user accounts and no server. Everything you create — sessions, tasks,
-  lists, and settings — is stored only on your device and never leaves it.</p>
+  <p><strong>In short:</strong> Focus Today has no user accounts and no server of our own, and
+  we do not collect your name, email address, or any other personal information. Everything you
+  create — sessions, tasks, lists, and settings — is stored only on your device. The one
+  exception is subscriptions: if you buy Focus Pro, your purchase is processed by Google Play and
+  verified by our subscription provider, RevenueCat, using an anonymous identifier (see
+  <a href="#subscriptions">Subscriptions</a>).</p>
 </div>
 
 <p>This policy explains how Focus Today ("the app", "we") handles information. It applies to
@@ -56,9 +59,12 @@ the Focus Today mobile application published by Gamma Development.</p>
 
 <h2>Information we collect</h2>
 
-<p><strong>We collect nothing.</strong> Focus Today has no analytics, no crash-reporting
-service, no advertising, no tracking, and no user accounts. We operate no servers and receive
-no information about you or your use of the app.</p>
+<p><strong>We do not collect personal information.</strong> Focus Today has no analytics, no
+crash-reporting service, no advertising, no tracking, and no user accounts. We never ask for
+your name, email address, phone number, or location, and we operate no servers of our own.</p>
+
+<p>The only information that leaves your device relates to optional subscriptions and is
+described under <a href="#subscriptions">Subscriptions</a> below.</p>
 
 <h2>Information stored on your device</h2>
 
@@ -77,7 +83,8 @@ data stays in the app's private storage on your device and is not transmitted an
 
 <p>You can erase all of it at any time by clearing the app's storage in your device settings,
 or by uninstalling the app. Because we never receive this data, uninstalling removes it
-completely — there is no copy for us to delete.</p>
+completely — there is no copy for us to delete. (Subscription records are different; see
+<a href="#deletion">Deleting subscription records</a>.)</p>
 
 <h2>Permissions the app requests</h2>
 
@@ -89,20 +96,42 @@ completely — there is no copy for us to delete.</p>
   <tr><td>Foreground service</td><td>To keep the timer running and play ambient sound while the app is not on screen</td></tr>
   <tr><td>Vibration</td><td>For haptic feedback and session-end alerts</td></tr>
   <tr><td>Motion sensor</td><td>For the optional "flip to focus" feature. Sensor readings are used momentarily to detect that the phone was turned over. They are never recorded or transmitted.</td></tr>
-  <tr><td>Internet</td><td>Reserved for subscription purchases (see below). The app makes no network requests for its core features.</td></tr>
+  <tr><td>Internet</td><td>Used only for subscription purchases and subscription status checks (see below). The app makes no network requests for its core features.</td></tr>
 </table>
 </div>
 
-<h2>Subscriptions</h2>
+<h2 id="subscriptions">Subscriptions</h2>
 
-<p>Focus Today offers an optional paid subscription. If you choose to subscribe, the purchase
-is processed by Google Play, and subscription status is managed on our behalf by RevenueCat,
-Inc. We never see or store your payment details — those are handled entirely by Google Play.</p>
+<p>Focus Today offers an optional paid subscription, Focus Pro. We use two services to provide
+it:</p>
 
-<p>To recognize your subscription across reinstalls, RevenueCat processes an anonymous
-identifier and your purchase receipt. It is not linked to your name, email, or any profile.
-See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>
-and <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</p>
+<p><strong>Google Play.</strong> Purchases are made and managed through Google Play. We never
+see or store your payment details — those are handled entirely by Google Play, under
+<a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</p>
+
+<p><strong>RevenueCat.</strong> To confirm whether your subscription is active, the app uses
+RevenueCat, Inc., a subscription-management service that acts on our behalf. RevenueCat
+receives:</p>
+
+<ul>
+  <li>an <strong>anonymous identifier</strong> generated for your installation. It is not linked
+  to your name, email address, or Google account;</li>
+  <li>your <strong>purchase information</strong> from Google Play, such as the product you
+  bought, the purchase and expiry dates, and whether the subscription is active; and</li>
+  <li><strong>technical information</strong> that accompanies any network request, such as your
+  IP address, app version, and device and operating system details.</li>
+</ul>
+
+<p>RevenueCat uses this information only to provide subscription services to us and handles it
+under <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>.
+We do not use it to identify you, we do not use it for advertising, and we do not sell it.</p>
+
+<p>The app contacts these services only when you open the paywall, buy or restore a purchase,
+or when it checks whether your subscription is still active. If you never subscribe, nothing
+beyond that status check is sent.</p>
+
+<p>You can cancel or change your subscription at any time in Google Play (Menu &rarr;
+Subscriptions), or from the Manage button in the app's Settings.</p>
 
 <h2>Information collected by Google Play</h2>
 
@@ -112,24 +141,37 @@ Console, but it does not identify you individually.</p>
 
 <h2>Children's privacy</h2>
 
-<p>Focus Today is not directed at children under 13, and we do not knowingly collect any
-information from anyone — including children — because we collect no information at all.</p>
+<p>Focus Today is not directed at children under 13, and we do not knowingly collect personal
+information from anyone — including children. The only data involved is the anonymous
+subscription information described above.</p>
 
 <h2>Data security</h2>
 
-<p>Your data is protected by your device's own security. Because nothing is transmitted or
-stored on a server, there is no remote database that could be breached.</p>
+<p>Your sessions, tasks, lists, and settings are protected by your device's own security and are
+never stored on a server. Subscription information is sent to RevenueCat over encrypted
+connections.</p>
+
+<h2 id="deletion">Deleting subscription records</h2>
+
+<p>Uninstalling the app does not cancel a subscription, and purchase records may remain with
+Google Play and RevenueCat under their own retention policies. To cancel, use Google Play
+(Menu &rarr; Subscriptions).</p>
+
+<p>To ask us to delete the anonymous subscription records we hold with RevenueCat, email
+<a href="mailto:support.focustoday@gmail.com">support.focustoday@gmail.com</a> and include the
+Google Play order number from your purchase receipt, so we can find them.</p>
 
 <h2>Your rights</h2>
 
 <p>Privacy laws give you rights to access, correct, export, or delete personal data a company
-holds about you. We hold none, so there is nothing for us to provide or erase. Your data is on
-your device and entirely under your control.</p>
+holds about you. We hold no personal information such as your name or email address. Your
+sessions, tasks, and settings are on your device and entirely under your control. For the
+anonymous subscription records described above, you can contact us as explained under
+<a href="#deletion">Deleting subscription records</a>.</p>
 
 <h2>Changes to this policy</h2>
 
-<p>If the app's data practices change — for example when subscriptions become available — we
-will update this page and revise the date above.</p>
+<p>If the app's data practices change, we will update this page and revise the date above.</p>
 
 <h2>Contact</h2>
 
