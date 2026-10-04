@@ -46,12 +46,11 @@
 <p class="updated">Focus Today &middot; Last updated 4 October 2026</p>
 
 <div class="summary">
-  <p><strong>In short:</strong> Focus Today has no user accounts and no server of our own, and
-  we do not collect your name, email address, or any other personal information. Everything you
-  create — sessions, tasks, lists, and settings — is stored only on your device. The one
-  exception is subscriptions: if you buy Focus Pro, your purchase is processed by Google Play and
-  verified by our subscription provider, RevenueCat, using an anonymous identifier (see
-  <a href="#subscriptions">Subscriptions</a>).</p>
+  <p><strong>In short:</strong> Focus Today does not collect, sell, or share your personal data.
+  The app has no user accounts, no advertising, no analytics, and no server of ours. Everything
+  you create — focus sessions, focus areas, and settings — is stored only on your device. The
+  only data that leaves your device is what is needed to process an optional Pro subscription,
+  handled by Google Play or the Apple App Store and RevenueCat (see "Subscriptions").</p>
 </div>
 
 <p>This policy explains how Focus Today ("the app", "we") handles information. It applies to
@@ -60,11 +59,12 @@ the Focus Today mobile application published by Gamma Development.</p>
 <h2>Information we collect</h2>
 
 <p><strong>We do not collect personal information.</strong> Focus Today has no analytics, no
-crash-reporting service, no advertising, no tracking, and no user accounts. We never ask for
-your name, email address, phone number, or location, and we operate no servers of our own.</p>
+crash-reporting service, no advertising, no tracking, and no user accounts. We operate no
+servers and receive no information about you or how you use the app.</p>
 
-<p>The only information that leaves your device relates to optional subscriptions and is
-described under <a href="#subscriptions">Subscriptions</a> below.</p>
+<p>The one exception is subscription processing, which is performed by third parties on our
+behalf and described below. If you contact us by email, we receive your email address and
+whatever you choose to write.</p>
 
 <h2>Information stored on your device</h2>
 
@@ -75,16 +75,17 @@ data stays in the app's private storage on your device and is not transmitted an
 <table>
   <tr><th>What</th><th>Why</th></tr>
   <tr><td>Focus sessions and their history</td><td>To show your statistics and streaks</td></tr>
-  <tr><td>Tasks and lists you create</td><td>To let you organize what you work on</td></tr>
-  <tr><td>App settings and preferences</td><td>Theme, timer lengths, sounds, reminders</td></tr>
+  <tr><td>Focus areas you create (name and color)</td><td>To let you label what you are focusing on and see time per area in your statistics</td></tr>
+  <tr><td>Your free-trial start date and Pro status</td><td>To know whether the trial is active and whether Pro features are unlocked</td></tr>
+  <tr><td>Your choices for Block Apps and strict mode (such as your allowed-apps list)</td><td>To apply the focus restrictions you set</td></tr>
+  <tr><td>App settings and preferences</td><td>Theme, language, timer lengths, sounds, reminders</td></tr>
   <tr><td>Current timer state</td><td>So a running session survives closing the app</td></tr>
 </table>
 </div>
 
 <p>You can erase all of it at any time by clearing the app's storage in your device settings,
 or by uninstalling the app. Because we never receive this data, uninstalling removes it
-completely — there is no copy for us to delete. (Subscription records are different; see
-<a href="#deletion">Deleting subscription records</a>.)</p>
+completely — there is no copy for us to delete.</p>
 
 <h2>Permissions the app requests</h2>
 
@@ -92,82 +93,70 @@ completely — there is no copy for us to delete. (Subscription records are diff
 <table>
   <tr><th>Permission</th><th>What it is used for</th></tr>
   <tr><td>Notifications</td><td>To show the running-timer notification and alert you when a session ends</td></tr>
-  <tr><td>Alarms and reminders</td><td>To end a focus session at exactly the right moment, even if the app is in the background</td></tr>
+  <tr><td>Alarms and reminders (exact alarms)</td><td>To end a focus session at exactly the right moment, even if the app is in the background</td></tr>
   <tr><td>Foreground service</td><td>To keep the timer running and play ambient sound while the app is not on screen</td></tr>
   <tr><td>Vibration</td><td>For haptic feedback and session-end alerts</td></tr>
   <tr><td>Motion sensor</td><td>For the optional "flip to focus" feature. Sensor readings are used momentarily to detect that the phone was turned over. They are never recorded or transmitted.</td></tr>
-  <tr><td>Internet</td><td>Used only for subscription purchases and subscription status checks (see below). The app makes no network requests for its core features.</td></tr>
+  <tr><td>Usage access (Android, optional)</td><td>Only for the Block Apps feature: to detect which app is in the foreground during a focus session so a blocking screen can be shown. This is processed on your device only, is never recorded or transmitted, and you can revoke it in system settings at any time.</td></tr>
+  <tr><td>Display over other apps (Android, optional)</td><td>Only for the Block Apps feature: to show the blocking screen over apps you have not allowed during a focus session.</td></tr>
+  <tr><td>Installed-apps visibility (Android, optional)</td><td>Only for the Block Apps feature: to list launchable apps so you can choose which to allow. The list is used on your device and is never transmitted.</td></tr>
+  <tr><td>Internet</td><td>Used for subscription purchases, restoring purchases, and checking subscription status (see below). The app makes no network requests for its core features.</td></tr>
 </table>
 </div>
 
-<h2 id="subscriptions">Subscriptions</h2>
+<h2>Subscriptions and payments</h2>
 
-<p>Focus Today offers an optional paid subscription, Focus Pro. We use two services to provide
-it:</p>
+<p>Focus Today offers a free trial and an optional paid subscription ("Pro"), billed monthly or
+annually. Purchases are processed entirely by <strong>Google Play</strong> (Android) or the
+<strong>Apple App Store</strong> (iOS). We never see, receive, or store your card number or other
+payment details. You can manage or cancel your subscription at any time in your Google Play or
+App Store subscription settings, or from the Manage button in the app.</p>
 
-<p><strong>Google Play.</strong> Purchases are made and managed through Google Play. We never
-see or store your payment details — those are handled entirely by Google Play, under
-<a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</p>
+<p>Subscription status is managed on our behalf by <strong>RevenueCat, Inc.</strong> To do this,
+the RevenueCat SDK in the app sends the following to RevenueCat's servers:</p>
 
-<p><strong>RevenueCat.</strong> To confirm whether your subscription is active, the app uses
-RevenueCat, Inc., a subscription-management service that acts on our behalf. RevenueCat
-receives:</p>
+<div class="scroll">
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>A randomly generated anonymous app user ID</td><td>To identify your subscription without an account</td></tr>
+  <tr><td>Purchase receipt / transaction details and subscription status</td><td>To verify your purchase, unlock Pro, and let you restore it after reinstalling or on a new device</td></tr>
+  <tr><td>Standard technical data (such as app version, device platform and OS version, locale, and IP address)</td><td>To operate the service and prevent fraud</td></tr>
+</table>
+</div>
 
-<ul>
-  <li>an <strong>anonymous identifier</strong> generated for your installation. It is not linked
-  to your name, email address, or Google account;</li>
-  <li>your <strong>purchase information</strong> from Google Play, such as the product you
-  bought, the purchase and expiry dates, and whether the subscription is active; and</li>
-  <li><strong>technical information</strong> that accompanies any network request, such as your
-  IP address, app version, and device and operating system details.</li>
-</ul>
+<p>This data is not linked to your name, email address, or any profile we hold, and we do not
+use it for advertising or tracking. Your focus sessions, focus areas, and settings are never
+sent to RevenueCat. See
+<a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>,
+<a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>, and
+<a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>.</p>
 
-<p>RevenueCat uses this information only to provide subscription services to us and handles it
-under <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>.
-We do not use it to identify you, we do not use it for advertising, and we do not sell it.</p>
+<h2>Information collected by Google Play and Apple</h2>
 
-<p>The app contacts these services only when you open the paywall, buy or restore a purchase,
-or when it checks whether your subscription is still active. If you never subscribe, nothing
-beyond that status check is sent.</p>
-
-<p>You can cancel or change your subscription at any time in Google Play (Menu &rarr;
-Subscriptions), or from the Manage button in the app's Settings.</p>
-
-<h2>Information collected by Google Play</h2>
-
-<p>Google Play may collect information about app installs, crashes, and performance
-independently of us, under its own policies. We may see this in aggregate through the Play
-Console, but it does not identify you individually.</p>
+<p>Google Play and the Apple App Store may collect information about app installs, purchases,
+crashes, and performance independently of us, under their own policies. We may see aggregated
+reports through the Play Console and App Store Connect, but they do not identify you
+individually.</p>
 
 <h2>Children's privacy</h2>
 
 <p>Focus Today is not directed at children under 13, and we do not knowingly collect personal
-information from anyone — including children. The only data involved is the anonymous
-subscription information described above.</p>
+information from children. The app has no accounts or profiles, and the only data processed off
+your device is the anonymous subscription data described above.</p>
 
 <h2>Data security</h2>
 
-<p>Your sessions, tasks, lists, and settings are protected by your device's own security and are
-never stored on a server. Subscription information is sent to RevenueCat over encrypted
-connections.</p>
-
-<h2 id="deletion">Deleting subscription records</h2>
-
-<p>Uninstalling the app does not cancel a subscription, and purchase records may remain with
-Google Play and RevenueCat under their own retention policies. To cancel, use Google Play
-(Menu &rarr; Subscriptions).</p>
-
-<p>To ask us to delete the anonymous subscription records we hold with RevenueCat, email
-<a href="mailto:support.focustoday@gmail.com">support.focustoday@gmail.com</a> and include the
-Google Play order number from your purchase receipt, so we can find them.</p>
+<p>Your focus data is protected by your device's own security. We keep no database of it, so
+there is nothing on our side that could be breached. Subscription data is transmitted over
+encrypted connections and handled by Google, Apple, and RevenueCat under their own security
+practices.</p>
 
 <h2>Your rights</h2>
 
 <p>Privacy laws give you rights to access, correct, export, or delete personal data a company
-holds about you. We hold no personal information such as your name or email address. Your
-sessions, tasks, and settings are on your device and entirely under your control. For the
-anonymous subscription records described above, you can contact us as explained under
-<a href="#deletion">Deleting subscription records</a>.</p>
+holds about you. We hold none ourselves: your focus data is on your device and under your
+control. For subscription data held by RevenueCat, Google, or Apple, you can exercise your
+rights with them using the privacy links above, or contact us and we will help where we can.</p>
 
 <h2>Changes to this policy</h2>
 
