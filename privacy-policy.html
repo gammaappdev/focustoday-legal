@@ -143,15 +143,18 @@ email address, or any account, and we do not use it for advertising or tracking.
 <div class="scroll">
 <table>
   <tr><th>Data</th><th>Why</th></tr>
-  <tr><td>Usage events, such as which screens you open, when the app is opened, and how long a session lasts</td><td>To understand how the app is used and improve it</td></tr>
+  <tr><td>Usage events, such as which screens you open, when the app is opened, how long a session lasts, and whether a focus session was completed</td><td>To understand how the app is used and improve it</td></tr>
   <tr><td>Crash reports: the technical error details and the state of the app and device when it crashed</td><td>To find and fix crashes and errors</td></tr>
   <tr><td>A randomly generated app-installation ID created by Firebase</td><td>To tell installs apart and count users without identifying you. It is reset when you uninstall the app.</td></tr>
   <tr><td>Standard technical data (such as device model, operating system version, app version, language, and approximate region derived from your IP address)</td><td>To group results by device and version and to diagnose problems</td></tr>
 </table>
 </div>
 
-<p>We do <strong>not</strong> send your focus sessions, focus areas, task names, settings, or any
-text you type to Firebase. The app does not collect your device's advertising ID or other
+<p>We send anonymous usage events, such as that a focus session was completed, which focus
+features were used, the purpose you chose during setup, and when the subscription screen is viewed,
+along with settings such as app language, theme, whether notifications are allowed, and subscription status.
+We never send the names or text you enter (such as focus area names), and events are not linked to
+your identity. The app does not collect your device's advertising ID or other
 persistent device identifiers for analytics. Analytics event data is kept for up to 14 months.
 Uninstalling the app stops all collection. For how Google handles this data, see
 <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security</a>
